@@ -14,4 +14,7 @@ Finally, just write a query
 
 `s how to be rich quick`
 
-Your default browser will open an window with the responses based on the valid_websites list
+Your default browser will open a window with the responses based on the query.
+
+# TODO:
+[] Allow insertion of websites to query
