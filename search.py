@@ -30,5 +30,4 @@ class Cmd_Search:
       webbrowser.open(query)
 
 obj = Cmd_Search()
-cmd = sys.argv[1:]
 obj.search(sys.argv[1:])
