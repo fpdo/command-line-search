@@ -4,7 +4,7 @@ Allows user to use command line to enter a prompt that will open a search window
 # How to use
 Add seach.py as an alias in your .bashrc file (or whatver you use)
 
-`alias s='python3 path/to/repo/command-line-search/search.py`
+`alias s='python3 path/to/repo/command-line-search/search.py'`
 
 Then source your .bashrc
 
