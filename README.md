@@ -7,7 +7,7 @@ Or allow user to ask a question directly to chatgpt.
 2. Create a `.env` file 
 3. Head over to [openai](https://openai.com/) create an accout, and generate your API Key.
 4. Inside the `.env` file, create a variable called `API_KEY` and assign the key from #3.
-  `API_KEY = "YOUR-API-KEY`
+  `API_KEY = "YOUR-API-KEY"`
 
 note: OpenAI ChatGPT is "free". Your are given certain amount of credits to spend.
 Once those are spent you might need to pay for more credits. 
