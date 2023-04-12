@@ -26,7 +26,7 @@ Then source your .bashrc
 
 Finally, just write a query
 
-`s how to be rich quick`, `s -f how to be write good code` or `sgpt how to make by gf happy`
+`s how to be rich quick`, `s -f how to write good code` or `sgpt how to make my gf happy`
 
 The `-f` flag on the `search.py` script will apply a filter to search only on stackoverflow
 
