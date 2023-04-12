@@ -28,12 +28,18 @@ Finally, just write a query
 
 `s how to be rich quick`, `s -f how to be write good code` or `sgpt how to make by gf happy`
 
-Note that the `-f` flag on the `search.py` script will apply a filter to search only on stackoverflow
+The `-f` flag on the `search.py` script will apply a filter to search only on stackoverflow
 
-In case of a query using `search.py` your browser will open with the search results.
+In case of a query using `search.py` a list with the top 10 links will be displayed in the terminal
 
-In case of a query using `search_gpt.py`your response will be displayed in the terminal.
+In case of a query using `search_gpt.py` your response will be displayed in the terminal.
+
+# Linting
+The project uses the python's Flake8 to check formatting style. It can be run locally by using
+```
+flake8
+```
+And if there are violations they will be printed in the terminal
 
 # TODO
 - Allow insertion of websites to query (filter websites).
-- Return search results on terminal.
