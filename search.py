@@ -1,10 +1,9 @@
 import sys
-import webbrowser
+from googlesearch import search
 
 
 class Cmd_Search:
     def __init__(self, prompt):
-        self.url = "https://www.google.com/search?q="
         self.filter = ''
         if (prompt[0] == "-f"):
             self.filter = prompt[0]
@@ -17,7 +16,6 @@ class Cmd_Search:
         self.search(self.filter)
 
     def apply_filter(self):
-        # Do nothing for now think about how to best apply this
         filter = "("
         for index, website in enumerate(self.valid_websites):
             filter += 'site: ' + website
@@ -31,8 +29,10 @@ class Cmd_Search:
         if len(self.prompt) == 0:
             print("Please enter a valid query...")
         else:
-            query = self.url + " ".join(self.prompt) + filter
-            webbrowser.open(query)
+            self.query = " ".join(self.prompt) + self.filter
+            for links in search(self.query, tld="co.in", num=10, stop=10,
+                                pause=1):
+                print(links)
 
 
 obj = Cmd_Search(sys.argv[1:])
